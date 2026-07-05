@@ -34,3 +34,13 @@ Run the server with `nodemon server.js`
 Navigate to `http://localhost:3000` to view our server.
 
 use `ctrl+c` to stop the server in the terminal.
+
+### Creating a Test Route 
+
+```js
+app.get('/test', function(req, res) {
+  res.send('<h1>Test response.</h1>');
+});
+```
+Navigate to `http://localhost:3000/test` to view our server.
+
