@@ -14,8 +14,16 @@
 
 - creat a directory
 - creat server file `touch server.js`
+- creat a `.gitignore` file 
 - initialize a node project with `npm init -y`
 - install express `npm i express`
+
+### Add `node_modules` to `.gitignore`
+
+.gitignore
+```bash
+node_modules
+```
 
 ### Write Server Boilerplate
 
