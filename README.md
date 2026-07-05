@@ -22,7 +22,11 @@
 server.js 
 ```js
 const express = require('express')
+const morgan = require('morgan');
 const app = express()
+app.use(morgan('dev'));
+
+
 
 app.listen(3000, function() {
   console.log('Listening on port 3000')
@@ -43,4 +47,14 @@ app.get('/test', function(req, res) {
 });
 ```
 Navigate to `http://localhost:3000/test` to view our server.
+
+### Using request parameter
+
+```js
+app.get('/:userId', function(req, res) {
+    res.send(`<h1>userId: ${req.params.userId}</h1>`);
+    console.log(req.params.userId)
+  });
+```
+Navigate to `http://localhost:3000/2023` to view our server.
 
