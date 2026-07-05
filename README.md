@@ -12,10 +12,10 @@
 
 ##SETUP
 
--creat a directory
--creat server file `touch server.js`
--initialize a node project with `npm init -y`
--install express `npm i express`
+- creat a directory
+- creat server file `touch server.js`
+- initialize a node project with `npm init -y`
+- install express `npm i express`
 
 ### Write Server Boilerplate
 
@@ -28,3 +28,5 @@ app.listen(3000, function() {
   console.log('Listening on port 3000')
 })
 ```
+
+Run the server with `nodemon server.js`
