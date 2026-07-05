@@ -10,7 +10,7 @@
 | Update | `update` | `PUT` | Save changes to an existing item |
 | Delete | `delete` | `DELETE` | Remove an item from the database |
 
-##SETUP
+## SETUP
 
 - creat a directory
 - creat server file `touch server.js`
