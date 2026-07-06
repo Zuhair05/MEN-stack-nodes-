@@ -86,6 +86,7 @@ Navigate to `http://localhost:3000/2023` to view our server.
     <h1>We are rendering an EJS page!</h1>
 </body>
 </html>
+
   ```
   - render `ejs` page using a controller like this one:
 
