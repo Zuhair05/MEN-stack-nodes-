@@ -66,3 +66,33 @@ app.get('/:userId', function(req, res) {
 ```
 Navigate to `http://localhost:3000/2023` to view our server.
 
+## Rendering EJS
+
+- install ejs with `npm i ejs`
+- creat a `views` directory
+- creat an `.ejs` file like `home.ejs`
+- add html boilerplate with `!`
+
+  home.ejs
+  ```html
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>We are rendering an EJS page!</h1>
+</body>
+</html>
+  ```
+  - render `ejs` page using a controller like this one:
+
+```js
+app.get('/', (req, res) => {
+  res.render('home.ejs');
+})
+
+```
+
